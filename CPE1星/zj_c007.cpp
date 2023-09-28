@@ -2,41 +2,42 @@
 using namespace std;
 
 int main(){
-    string str,ans;
+    string str;
+    char c[1000];
     int count=0;
     int j=0;
-    char a = char(39);
 
-    getline(cin,str);
-
-    cout<<str<<" "<<str.length()<<endl;
-
-    for(int i=0;i<str.length();i++){
-        /*
-        if(str[i]=='"'){
-            if(count%2==0){
-                out[j] ='`';
-                j++;
-                out[j] ='`';
-                j++;
-
-                count++;
-            }else{
-                out[j] = a;
-                j++;
-                out[j] = a;
-                j++;
+    while(getline(cin,str)){
+        for(int i=0;i<str.length();i++){
+            if(str[i]=='"'){
+                if(count%2==0){
+                    c[j] ='`';
+                    c[j+1] ='`';
+                    j+=2;
+                    count++;
+                }else{
+                    c[j] = char(39); // ' 
+                    c[j+1] = char(39);
+                    j+=2;
+                    count++;
+                }
+                continue;
             }
-            continue;
+
+            if(str[i]=='\n') break;
+
+            c[j] = str[i];
+            j++;
         }
-        */
-        ans[j] = str[i];
-        j++;
+
+        for(int i=0;i<j;i++){
+            cout<<c[i];
+            c[i] = '\0';
+        }
+
+        j=0;
+
+        cout<<endl;
     }
-
-    cout<<j;
-
-    //cout<<output<<" ";
-
 
 }
