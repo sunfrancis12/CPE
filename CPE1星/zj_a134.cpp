@@ -30,8 +30,9 @@ void fib(int n){
     char ans[1000];
     int digit = 0;
 
+    //找尋最高位數
     while(n>=f_fibo(big)){
-        big++; //位置
+        big++; //base陣列中位置
     }
 
     big--;
