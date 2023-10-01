@@ -5,6 +5,7 @@
         "ostream": "cpp",
         "iosfwd": "cpp",
         "iomanip": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "ratio": "cpp"
     }
 }
