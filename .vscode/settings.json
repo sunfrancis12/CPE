@@ -6,6 +6,7 @@
         "iosfwd": "cpp",
         "iomanip": "cpp",
         "bitset": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "cmath": "cpp"
     }
 }
