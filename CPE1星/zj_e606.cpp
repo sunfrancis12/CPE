@@ -46,27 +46,36 @@ int main(){
 
         merge(0,n-1,a);
 
-        int min,count=0,mid=(n-1)/2;
+        int min,num,count=0,mid=(n-1)/2;
         
+        //偶數
         if(n%2==0){
-            if(a[mid]!=a[mid + 1]){
-                min = 2;
+            if(a[mid] > a[mid + 1]){
+                num = a[mid + 1];
+            }else if(a[mid] < a[mid + 1]){
+                num = a[mid];
+            }else{
+                num = a[mid];
             }
 
-            int j = mid - 1;
-
-            while(j==a[(n-1)/2]){
-                count++;
-                j--;
+            for(int i=0;i<n;i++){
+                if(a[i]==a[mid] || a[i]==a[mid+1]) count++;
             }
+            
+            min = a[mid+1] - a[mid] + 1;
 
-            int j = (n-1)/2 - 1;
-
-            cout<<a[(n-1)/2]<<" ";
-        }else{
+        }else{  //基數
             min = 1;
-            cout<<a[(n-1)/2]<<" ";
+            num = a[mid];
+
+            for(int i=0;i<n;i++){
+                if(a[i]==num){
+                    count++;
+                }
+            }
+
         }
 
+        cout<<num<<" "<<count<<" "<<min<<endl;
     }
-}
+}   
