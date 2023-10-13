@@ -24,8 +24,6 @@ int main(){
                 continue;
             }
 
-            if(str[i]=='\n') break;
-
             c[j] = str[i];
             j++;
         }
