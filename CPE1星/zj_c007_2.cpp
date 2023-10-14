@@ -8,7 +8,7 @@ int main()
     string s;
     while(getline(cin,s))
     {
-        for(char &i : s)
+        for(char i : s)
         {
             if(i == '\"')
             {
