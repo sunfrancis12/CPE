@@ -2,5 +2,9 @@ https://yuihuang.com/zj-e605/
 https://yuihuang.com/zj-d123/
 https://yuihuang.com/zj-d255/
 
-
+小數點
+https://zerojudge.tw/ShowProblem?problemid=e510
 dict{} .get()
+
+中位數
+sort後， [2/n]
