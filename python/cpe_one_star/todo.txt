@@ -6,5 +6,7 @@ https://yuihuang.com/zj-d255/
 https://zerojudge.tw/ShowProblem?problemid=e510
 dict{} .get()
 
+https://yuihuang.com/zj-c471/
+
 中位數
 sort後， [2/n]
