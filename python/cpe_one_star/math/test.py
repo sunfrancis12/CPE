@@ -1,0 +1,1 @@
+print(f"aaaa{40:4d}aaaa")
