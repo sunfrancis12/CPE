@@ -1,3 +1,5 @@
+### 字母處理與自訂排序
+
 n = int(input())
 cnt = {}
 for _ in range(n):
