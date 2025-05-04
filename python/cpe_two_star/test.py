@@ -1,11 +1,5 @@
-def all_divisors(n):
-    divisors = []
-    for i in range(1, int(n**0.5) + 1):
-        if n % i == 0:
-            divisors.append(i)
-            if i != n // i:  # 避免平方數重複
-                divisors.append(n // i)
-    return sorted(divisors)
-
-n = int(input("輸入一個正整數："))
-print(f"{n} 的所有因數為：{all_divisors(n)}")
+from collections import Counter
+s = [1,2,3,6,3,6,2,7,2,6,8,8]
+cnt_s = Counter(s)
+print(cnt_s)
+print(cnt_s[6])
