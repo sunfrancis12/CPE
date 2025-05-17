@@ -1,3 +1,4 @@
-dp = [[0 for _ in range(5)] for _ in range(5)]
-if dp[3][4]:
-    print("yes")
+dp = [x for x in range(10)]
+for i in range(10):
+    print(i)
+    i += 2
